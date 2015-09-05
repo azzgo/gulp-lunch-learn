@@ -1,0 +1,1 @@
+var add=function(n,r){return n+r};module.exports=add;var minus=function(n,r){return n-r};module.exports=minus;

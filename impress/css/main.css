@@ -1,0 +1,83 @@
+/*#impress .slide {
+    background-color: #cf4646;
+}
+*/
+
+.slide.step {
+    background-color: #cf4646;
+    color: #fff;
+}
+
+.slide.step h1 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;  
+}
+
+
+.slide.step h2 {
+    font-size: 1.2em;
+    margin-bottom: 30px;  
+}
+
+#main-page {
+    background-image: url("/img/gulp.png");
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+
+#main-page h1{
+    text-align: left;
+    margin-top: 40%;
+    font-size: 40px;
+    padding-left: 54px;
+    margin-bottom: 50px;
+}
+
+#main-page p {
+    font-size: 24px;
+    padding-left: 54px;
+}
+
+
+#features dl{
+}
+
+dl dt{ 
+    font-style: italic; 
+    margin-top: 25px;
+}
+
+dl dd {
+    margin-top: 5px;
+    font-size: 0.75em;
+}
+
+ul li{
+    margin-bottom: 20px;
+}
+
+pre {
+    margin: 5px 0;
+    padding: 0;
+}
+
+pre code{
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: center;
+    border-radius:10px;
+    padding: 10px 10px 15px 30px !important;
+}
+
+img {
+    display: block;
+    width: 600px;
+    margin: auto;
+}
+
+#end-page img{
+    margin-top: 80px;
+    height: 400px;
+    width: auto;
+}

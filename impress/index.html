@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Lunch and Learn For Gulp</title>
+        <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+        <meta name="author" content="Bartek Szopka" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link href="css/impress-demo.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/monokai_sublime.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/highlight.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body class="impress-not-supported">
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
+        <div id="impress">
+            <div id="main-page" class="step slide" data-x="0" data-y="0">
+                <h1>Automate and enhance your workflow</h1>
+                <p>Welcome to Lunch and Learn For Gulp</p>
+                <p>Presenter: Yishan</p>
+            </div>
+            <div id="features" class="step slide" data-x="1000" data-y="0" data-rotate="90">
+                <h1>Main Feature</h1>
+                <dl>
+                    <dt>Easy to use</dt>
+                    <dd>By preferring code over configuration, gulp keeps things simple and makes complex tasks manageable.</dd>
+                   <dt>
+                        Efficient
+                    </dt>
+                    <dd>Using the power of node streams, gulp gives you fast builds that don't write intermediary files to disk.</dd>
+                    <dt>High Quality</dt> 
+                    <dd>By enforcing strict plugin guidelines, we ensure that plugins stay simple and work as expected.</dd>
+                    <dt>Easy to Learn</dt>
+                    <dd>Using node best practices and maintaining a minimal API surface, your build works exactly as you would imagine.</dd>
+                </dl>
+            </div>
+            <div class="step slide" data-x="1000" data-y="1000" data-rotate-y="90">
+                <h1>Prepare before Start</h1>
+                
+                <div>
+                    <ul>
+                        <li>1. NPM Pacage Manager</li>
+                        <li>2. Install gulp in global</li>
+                        <pre><code class="bash">$  npm install --global gulp</code></pre>
+                        <li>3. Install gulp in your project devDependencies</li>
+                        <pre><code class="bash">$  npm install --save-dev gulp</code></pre>
+                        <li>4. Create gulpfile.js in your project root director</li>
+                        <pre><code class="javascript">
+$  var gulp = require('gulp');
+
+$  gulp.task('default', function() {
+  // place code for your default task here
+});
+                        </code></pre>
+                    </ul>
+                </div>
+            </div>
+            <div class="step slide" data-x="-1000" data-y="1000"  data-rotate-y="90" data-scale="0.5">
+                <h1>Structure and Exec</h1>
+                <h2>Structure</h2>
+                <pre><code class="javascript">
+var gulp = require('gulp');
+// gulp plugin import here
+// other library import
+
+gulp.task('default', function() {
+  // place code for your default task here
+});
+
+gulp.task(CUSTOM_TASK_NAME, function() {
+  // place code for your custom task here
+});
+
+// ... many task
+                </code></pre>
+                <br>
+                <h2>Exec</h2>
+                <pre><code class="bash">
+$  gulp  [task name]
+                </code></pre>
+            </div>
+
+            <div class="step slide" data-x="-1000" data-y="1500">
+                <h1>Gulp Api</h1>
+
+                <div>
+                    <dl>
+                        <dt>gulp.src</dt>
+                        <dd>Emits files matching provided glob or an array of globs.</dd>
+                        <dt>gulp.dest</dt>
+                        <dd>Can be piped to and it will write files. Re-emits all data passed to it so you can pipe to multiple folders. Folders that don't exist will be created.</dd>
+                        <dt>gulp.task</dt>
+                        <dd>Define a task using Orchestrator.</dd>
+                        <dt>gulp.watch</dt>
+                        <dd>Watch files and do something when a file changes. </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div id="demo" class="step slide" data-x="0" data-y="1500">
+                <h1>Demonstrate</h1>
+                <img src="img/demo.png" alt="demo time">
+            </div>
+
+            <div class="step slide" data-x="0" data-y="2000" data-z="-500" data-rotate-y="180" data-rotate-x="90">
+                <h1>Know More...</h1>
+                <br>
+                <br>
+                <dl>
+                    <dt>Gulp Document</dt>
+                    <dd>https://github.com/gulpjs/gulp/blob/master/docs/README.md</dd>
+                    <dt>Find Plugin in NPM package repository</dt>
+                    <dd>gulp-[plugin name]</dd>
+                    <dt>Find Plugin in gulp Search Engine</dt>
+                    <dd>http://gulpjs.com/plugins/</dd>
+                </dl>
+            </div>
+
+            <div class="step slide" data-x="0" data-y="1500" data-z="-1000" data-scale="0.1">
+                <h1>Any Question?</h1>
+                <br>
+                <img src="img/question.gif" alt="thank you image">
+            </div>
+
+            <div id="end-page" class="step slide" data-x="0" data-y="1500" data-z="-2000" data-scale="0.5">
+                <img src="img/bow.png" alt="end img for thank you">
+                <h1>Please Give me Some FeedBack.</h1>
+                <h1>Thank you!</h1>
+            </div>
+            <script src="js/impress.js"></script>
+            <script>
+            var api = impress()
+            api.init();
+            // setInterval(function () {
+            //     api.next();
+            // }, 2000)
+            </script>
+        </body>
+    </html>
